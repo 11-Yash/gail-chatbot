@@ -22,34 +22,34 @@
             flex-direction: column;
             padding: 20px;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-            transition: width 0.3s ease; /* Smooth transition */
+            transition: width 0.3s ease;
         }
 
         #sidebar.collapsed {
-            width: 60px; /* Width when collapsed */
+            width: 60px;
         }
 
         #sidebar h2 {
             font-size: 20px;
-            margin: 10px 0; /* Adjusted margin for better alignment */
-            transition: opacity 0.3s ease; /* Smooth transition */
-            opacity: 1; /* Ensure text is visible when not collapsed */
+            margin: 10px 0; 
+            transition: opacity 0.3s ease; 
+            opacity: 1; 
         }
 
         #sidebar.collapsed h2 {
-            margin: 0; /* No margin when collapsed */
-            opacity: 0; /* Hide text when collapsed */
+            margin: 0; 
+            opacity: 0; 
         }
 
         #sidebar a {
             color: #f0f0f0;
             text-decoration: none;
             margin: 10px 0;
-            transition: opacity 0.3s ease; /* Smooth transition */
+            transition: opacity 0.3s ease;
         }
 
         #sidebar.collapsed a {
-            opacity: 0; /* Hide links when collapsed */
+            opacity: 0;
         }
 
         #sidebar a:hover {
@@ -62,8 +62,8 @@
             border: none;
             color: white;
             font-size: 16px;
-            align-self: flex-start; /* Align button to the left */
-            margin-bottom: 20px; /* Spacing between button and title */
+            align-self: flex-start;
+            margin-bottom: 20px;
         }
 
         #main {
@@ -71,7 +71,7 @@
             display: flex;
             flex-direction: column;
             padding: 20px;
-            justify-content: space-between; /* Added to align content */
+            justify-content: space-between; 
         }
 
         #header {
@@ -81,14 +81,14 @@
         }
 
         #chat-container {
-            flex-grow: 1; /* Allowing chat container to grow */
+            flex-grow: 1; 
             margin-top: 20px;
             background-color: #f9f9f9;
             border-radius: 10px;
             padding: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            flex-direction: column; /* Changed to column for proper alignment */
+            flex-direction: column; 
         }
 
         #chat-box {
@@ -97,8 +97,8 @@
             padding: 10px;
             border-radius: 10px;
             background-color: #ffffff;
-            flex-grow: 1; /* Allow chat box to grow */
-            margin-bottom: 10px; /* Space between chat box and input */
+            flex-grow: 1;
+            margin-bottom: 10px; 
         }
 
         .message {
@@ -148,11 +148,10 @@
             background-color: #45a049;
         }
 
-        /* New style for sidebar links */
         #sidebar-links {
             display: flex;
-            flex-direction: column; /* Align links in a column */
-            flex-grow: 1; /* Allow it to grow */
+            flex-direction: column; 
+            flex-grow: 1; 
         }
     </style>
 </head>
@@ -184,7 +183,6 @@
     </div>
 
     <script>
-        // Toggle sidebar collapse/expand
         document.getElementById("toggle-btn").addEventListener("click", () => {
             const sidebar = document.getElementById("sidebar");
             sidebar.classList.toggle("collapsed");
@@ -221,7 +219,7 @@
 
             const chatBox = document.getElementById("chat-box");
             chatBox.appendChild(messageElement);
-            chatBox.scrollTop = chatBox.scrollHeight; // Auto scroll to the bottom
+            chatBox.scrollTop = chatBox.scrollHeight; 
         }
     </script>
 </body>
